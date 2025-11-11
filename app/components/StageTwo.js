@@ -11,7 +11,8 @@ export default function StageTwo({ next, back }) {
     parents: "Sudarisman & Suripah",
     child: "Adinda Keisya Putri Hidayah",
     social: "Gak boleh difollow 😎",
-    lifePath: "11",
+    lifePath: "7",
+    neptu: "11",
     zodiac: "Scorpio",
     shio: "Monyet",
     primbon: "Rabu Wage",
@@ -38,6 +39,7 @@ export default function StageTwo({ next, back }) {
         <li><strong>Anak yang Membanggakan:</strong> {data.child}</li>
         <li><strong>Akun Sosmed:</strong> {data.social}</li>
         <li><strong>Life Path:</strong> {data.lifePath}</li>
+        <li><strong>Neptu:</strong> {data.neptu}</li>
         <li><strong>Zodiak:</strong> {data.zodiac}</li>
         <li><strong>Shio:</strong> {data.shio}</li>
         <li><strong>Weton (ꦮꦺꦠꦺꦴꦤ꧀):</strong> {data.primbon}</li>
