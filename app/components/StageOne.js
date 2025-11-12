@@ -11,11 +11,9 @@ export default function StageOne({ next }) {
     >
       <h1 className="text-3xl font-semibold mb-3">Halo!</h1>
       <p className="text-gray-600 leading-relaxed">
-        Hari ini bukan hari biasa. mungkin bagi sebagian orang, ini hanya tanggal cantik untuk diskon belanja,
-        tapi tentu saja tidak, hari ini Ada seseorang yang pantas dirayakan—
-        dengan segala tawa, lelah, dan kisah yang sudah ia taklukkan.
-        Siapkan hati, karena halaman ini punya sedikit keajaiban kecil
-        buatmu. ✨
+        Hai jelek, istirahat cukup, makan cukup, jangan 
+        overthinking nanti naik aslam nya
+          hehehe
       </p>
 
       <button
