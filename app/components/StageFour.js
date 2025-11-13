@@ -34,7 +34,7 @@ export default function StageFour({ backToStart }) {
       <h1 className="text-4xl font-bold mb-2">Aman Aja!</h1>
       <p className="text-gray-600 mb-4">
         Gak harus dipujuk kok, tapi kalau mau email
-      siap menerima hehehe.
+       siap menerima hehehe. Senyum dulu dong!
         Please, Titi bahagia terus!
       </p>
       <div className="text-5xl font-extrabold mb-4">{age}</div>
