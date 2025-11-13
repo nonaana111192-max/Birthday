@@ -26,7 +26,7 @@ export default function StageThree({ next, back }) {
           Kembali
         </button>
         <button onClick={next} className="px-4 py-2 rounded-lg bg-pink-500 text-white">
-          Buka Kejutan
+          Lanjut lagi dong
         </button>
       </div>
     </motion.div>
