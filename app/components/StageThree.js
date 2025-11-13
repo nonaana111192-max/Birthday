@@ -2,8 +2,7 @@
 import { motion } from "framer-motion";
 
 export default function StageThree({ next, back }) {
-  const message = `Do'a dan harapan untuk Titi,  
-Semoga di setiap langkah, Allah selalu tuntun Titi ke jalan yang paling baik...`;
+  const message = `hhhiiiiaaatttt`;
 
   return (
     <motion.div
@@ -12,7 +11,7 @@ Semoga di setiap langkah, Allah selalu tuntun Titi ke jalan yang paling baik...`
       transition={{ duration: 0.4 }}
       className="w-full max-w-md mx-4 p-6 rounded-2xl bg-white shadow-md text-center"
     >
-      <h2 className="text-2xl font-semibold mb-3">Pesan Khusus</h2>
+      <h2 className="text-2xl font-semibold mb-3">Kondisi saat ini</h2>
 
       <img
         src="https://media1.tenor.com/m/mRANZPomfkIAAAAd/nailong.gif"
