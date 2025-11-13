@@ -16,7 +16,7 @@ export default function StageTwo({ next, back }) {
     >
       <h2 className="text-2xl font-semibold mb-3">Sekarang harus gimana?</h2>
       <h1 className="text-gray-700 space-y-2 text-left">
-       NAH, NAH, TAU KAN? TAU KAN?
+       COBA TEBAK GIMANA MUJUKNYA?
       </h1>
 
       <div className="mt-6 flex justify-between">
