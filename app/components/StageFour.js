@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import confetti from "canvas-confetti";
 
 export default function StageFour({ backToStart }) {
-  const age = 33;
+  const age = "Heyy";
 
   useEffect(() => {
     const duration = 2 * 1000;
@@ -31,10 +31,11 @@ export default function StageFour({ backToStart }) {
 
   return (
     <div className="w-full max-w-md mx-4 p-6 rounded-2xl bg-white shadow-md text-center">
-      <h1 className="text-4xl font-bold mb-2">🎉 Selamat Ulang Tahun!</h1>
+      <h1 className="text-4xl font-bold mb-2">Aman Aja!</h1>
       <p className="text-gray-600 mb-4">
-        Semoga hari Titi penuh tawa dan kejutan manis.
-        Please, bahagia terus!
+        Gak harus dipujuk kok, tapi kalau mau email
+      siap menerima hehehe.
+        Please, Titi bahagia terus!
       </p>
       <div className="text-5xl font-extrabold mb-4">{age}</div>
 
