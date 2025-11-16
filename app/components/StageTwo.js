@@ -16,18 +16,18 @@ export default function StageTwo({ next, back }) {
     >
       <h2 className="text-2xl font-semibold mb-3">Sekarang harus gimana?</h2>
       <h1 className="text-gray-700 space-y-2 text-left">
-       COBA TEBAK GIMANA MUJUKNYA?
+       Apapun yang sedang kamu lakukan, kamu usahakan, selalu minta petunjuk sama Allah ya
       </h1>
 
       <div className="mt-6 flex justify-between">
         <button onClick={back} className="px-4 py-2 rounded-lg border">
-          Kembali
+          Back
         </button>
         <button
           onClick={next}
           className="px-4 py-2 rounded-lg bg-pink-500 text-white"
         >
-          Lanjut lagi
+          Next
         </button>
       </div>
     </motion.div>
