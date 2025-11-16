@@ -33,9 +33,12 @@ export default function StageFour({ backToStart }) {
     <div className="w-full max-w-md mx-4 p-6 rounded-2xl bg-white shadow-md text-center">
       <h1 className="text-4xl font-bold mb-2">Aman Aja!</h1>
       <p className="text-gray-600 mb-4">
-        Gak harus dipujuk kok, tapi kalau mau email
-       siap menerima hehehe. Senyum dulu dong!
-        Please, Titi bahagia terus!
+       Intinya tetap sehat, tetap semangat, terus bahagia.
+    ada kakak, bapak, dan mamak yang selalu mendukung dan harus dibahagiakan.
+    tapi tetap bahagia Titi diutamakan ya
+    #CTYT
+      #Terhebat
+      #Terlambat
       </p>
       <div className="text-5xl font-extrabold mb-4">{age}</div>
 
@@ -44,7 +47,7 @@ export default function StageFour({ backToStart }) {
           onClick={backToStart}
           className="px-4 py-2 rounded-lg border hover:bg-gray-100 transition"
         >
-          Ulang lagi
+          Once Again
         </button>
       </div>
     </div>
