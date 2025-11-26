@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 export default function StageThree({ next, back }) {
-  const message = `Please Happy Terus`;
+  const message = `Lihat betapa bahagianya dia`;
 
   return (
     <motion.div
