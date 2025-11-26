@@ -11,7 +11,7 @@ export default function StageOne({ next }) {
     >
       <h1 className="text-3xl font-semibold mb-3">Halo!</h1>
       <p className="text-gray-600 leading-relaxed">
-       Please kamu harus sehat terus ya!
+       Hai orang paling terkasih, tersayang...
       </p>
 
       <button
