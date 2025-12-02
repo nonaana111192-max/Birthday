@@ -16,11 +16,16 @@ export default function StageTwo({ next, back }) {
     >
       <h2 className="text-2xl font-semibold mb-3">kata-kata dari mamas</h2>
       <h1 className="text-gray-700 space-y-2 text-left">
-       Andai kita diberikan kuasa untuk memutar waktu agar bisa menjalani apa yang kita inginkan, kita usahakan, 
+       Sejatinya kau pasti tahu,
+        Andai kita diberikan kuasa untuk memutar waktu agar bisa menjalani apa yang kita inginkan, kita usahakan, 
        kamu pasti akan tau betapa besar dan luas nya rasa yang kuberi padamu.
       Tentu tak akan kubiarkan kesedihan bersembunyi di relung hatimu yang rapuh,
         akan terus aku upayakan rasa tenang, senang, dan nyaman itu kokoh menguasai seluruh isi hatimu,
         jiwa dan raga
+
+        kau bukan hanya ada di sepenggalan kisah, tapi kau satu-satunya yang 
+          diabadikan dalam karya, sebuah buku
+            Cinta Terhebat!
       </h1>
 
       <div className="mt-6 flex justify-between">
