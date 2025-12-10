@@ -14,18 +14,9 @@ export default function StageTwo({ next, back }) {
       transition={{ duration: 0.4 }}
       className="w-full max-w-md mx-4 p-6 rounded-2xl bg-white shadow-md"
     >
-      <h2 className="text-2xl font-semibold mb-3">kata-kata dari mamas</h2>
+      <h2 className="text-2xl font-semibold mb-3"></h2>
       <h1 className="text-gray-700 space-y-2 text-left">
-       Sejatinya kau pasti tahu,
-        Andai kita diberikan kuasa untuk memutar waktu agar bisa menjalani apa yang kita inginkan, kita usahakan, 
-       kamu pasti akan tau betapa besar dan luas nya rasa yang kuberi padamu.
-      Tentu tak akan kubiarkan kesedihan bersembunyi di relung hatimu yang rapuh,
-        akan terus aku upayakan rasa tenang, senang, dan nyaman itu kokoh menguasai seluruh isi hatimu,
-        jiwa dan raga
-
-        kau bukan hanya ada di sepenggalan kisah, tapi kau satu-satunya yang 
-          diabadikan dalam karya, sebuah buku
-            Cinta Terhebat!
+      Bahagia Terus...
       </h1>
 
       <div className="mt-6 flex justify-between">
