@@ -1,37 +1,112 @@
-"use client";
-import { motion } from "framer-motion";
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Aristy ❤️</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .heart-bg {
+      position: fixed;
+      font-size: 20px;
+      opacity: 0.15;
+      animation: float 15s infinite;
+      pointer-events: none;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 20px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      animation: slideIn 0.5s ease-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: scale(0.92) translateY(20px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .heart-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      animation: heartBeat 1.5s infinite;
+      display: inline-block;
+    }
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      10%, 30% { transform: scale(1.1); }
+      20%, 40% { transform: scale(1); }
+    }
+    h1 {
+      color: #d946ef;
+      font-size: 32px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    p {
+      color: #4b5563;
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+    .highlight {
+      color: #d946ef;
+      font-weight: 600;
+    }
+    a { text-decoration: none; }
+    button {
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      margin: 5px;
+      background: linear-gradient(135deg, #ec4899 0%, #d946ef 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+    }
+    button:active { transform: scale(0.95); }
+  </style>
+</head>
+<body>
+  <div class="heart-bg" style="top: 10%; left: 15%;">💕</div>
+  <div class="heart-bg" style="top: 60%; left: 8%; animation-delay: 2s;">❤️</div>
+  <div class="heart-bg" style="top: 30%; right: 12%; animation-delay: 1s;">💖</div>
+  <div class="heart-bg" style="top: 70%; right: 20%; animation-delay: 3s;">💗</div>
+  <div class="heart-bg" style="top: 85%; left: 40%; animation-delay: 1.5s;">💝</div>
 
-export default function StageOne({ next }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.38 }}
-      className="w-full max-w-md mx-4 p-6 rounded-2xl bg-gradient-to-br from-pink-50 to-white shadow-md text-center"
-    >
-      <div className="flex flex-col items-center">
-        <motion.div
-          animate={{ scale: [1, 1.06, 1] }}
-          transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
-          className="w-36 h-36 rounded-full flex items-center justify-center bg-white shadow-inner"
-          aria-hidden
-        >
-          <svg viewBox="0 0 24 24" className="w-24 h-24 text-pink-500 fill-current">
-            <path d="M12 21s-7.5-4.7-9.5-7.2C-0.08 9.9 3.5 5 7.5 6.5 9.2 7.2 10 9 12 10.7 14 9 14.8 7.15 16.5 6.5 20.5 5 24.08 9.9 21.5 13.8 19.5 16.3 12 21 12 21z" />
-          </svg>
-        </motion.div>
-
-        <h1 className="text-3xl font-semibold mt-4 text-pink-700">Hai, sayang!</h1>
-        <p className="text-gray-600 mt-2">Aku sudah siapkan sesuatu yang manis — yuk mulai 💕</p>
-
-        <button
-          onClick={next}
-          className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-pink-500 text-white rounded-2xl text-lg shadow-sm active:scale-95 focus:outline-none"
-        >
-          Mulai
-          <span aria-hidden>💖</span>
-        </button>
-      </div>
-    </motion.div>
-  );
-}
+  <div class="container">
+    <div class="heart-icon">💝</div>
+    <h1>Halo!</h1>
+    <p style="text-align: center;">
+      Hai <span class="highlight">Aristy Novianingsih (ANBS)</span><br>
+      orang paling terkasih, tersayang... 💕
+    </p>
+    <a href="StageTwo.js">
+      <button>Next</button>
+    </a>
+  </div>
+</body>
+</html>
