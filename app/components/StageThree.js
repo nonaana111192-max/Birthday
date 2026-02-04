@@ -1,43 +1,62 @@
 "use client";
 import { motion } from "framer-motion";
 
-const LINES = [
-  "Untukmu, yang selalu membuat hari lebih hangat.",
-  "Semoga setiap hari penuh tawa, kesehatan, dan kebahagiaan.",
-  "Terima kasih sudah jadi kamu — selalu istimewa.",
-];
-
 export default function StageThree({ next, back }) {
+  const message = "Lihat betapa bahagianya dia 🤍";
+
   return (
     <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.35 }}
-      className="w-full max-w-md mx-4 p-6 rounded-2xl bg-gradient-to-br from-rose-50 to-white shadow-md text-center"
+      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: -20, scale: 0.95 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="w-full max-w-md mx-4 p-8 rounded-3xl bg-white shadow-lg text-center"
     >
-      <h2 className="text-2xl font-semibold mb-3 text-rose-600">Surat Kecil</h2>
+      <motion.h2
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.15 }}
+        className="text-2xl font-semibold mb-4 text-gray-800"
+      >
+        Kayak si Nailong 🐉
+      </motion.h2>
 
-      <div className="mt-3 text-left w-full space-y-3">
-        {LINES.map((l, i) => (
-          <motion.p
-            key={i}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.12, duration: 0.35 }}
-            className="text-gray-700"
-          >
-            {l}
-          </motion.p>
-        ))}
-      </div>
+      <motion.img
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.3 }}
+        src="https://media1.tenor.com/m/aqQM4YJbKJUAAAAC/nailong.gif"
+        alt="Nailong bahagia"
+        className="mx-auto mb-5 rounded-2xl shadow-sm"
+      />
 
-      <div className="mt-6 flex justify-between">
-        <button onClick={back} className="px-4 py-2 rounded-lg border">
-          Back
-        </button>
-        <button onClick={next} className="px-4 py-2 rounded-lg bg-pink-500 text-white">
-          Next
-        </button>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.45 }}
+        className="text-gray-600 text-base"
+      >
+        {message}
+      </motion.p>
+
+      <div className="mt-8 flex justify-between items-center">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={back}
+          className="px-5 py-2 rounded-xl border border-gray-300 text-gray-600 hover:bg-gray-50 transition"
+        >
+          Kembali
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={next}
+          className="px-6 py-2 rounded-xl bg-pink-500 hover:bg-pink-600 text-white shadow-md transition-colors"
+        >
+          Lanjut 💖
+        </motion.button>
       </div>
     </motion.div>
   );
